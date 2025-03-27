@@ -27,7 +27,7 @@ const Features = () => {
     <section id="features" className="section">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
-          <h2 className="section-title animate-fade-up animate-once animate-fill-both">Our Team</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center animate-fade-up animate-once animate-fill-both">Our Team</h2>
           <p className="section-subtitle animate-fade-up animate-delay-100 animate-once animate-fill-both">
             Meet the talented individuals behind our work and discover the skills that make us exceptional.
           </p>
@@ -35,11 +35,11 @@ const Features = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-4xl mx-auto">
           {teamMembers.map((member, index) => (
-            <TeamMember key={index} name={member.name} role={member.role} image={member.image} skills={member.skills} />
+            <TeamMember delay={10} key={index} name={member.name} role={member.role} image={member.image} skills={member.skills} />
           ))}
         </div>
         
-        <div className="mt-24">
+        <div className="my-24">
           <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center animate-fade-up animate-once animate-fill-both">
             Our Core Capabilities
           </h3>

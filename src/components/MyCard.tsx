@@ -11,7 +11,7 @@ interface Props {
 
 export default function MyCard({img}: Props) {
   return (
-    <CardContainer className="inter-var">
+    <CardContainer className="inter-var shadow-md">
       <CardBody className="relative group/card w-[300px] h-[300px] rounded-xl">
         <CardItem
           translateZ="100"

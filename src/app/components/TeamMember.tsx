@@ -9,7 +9,7 @@ interface TeamMemberProps {
 
 const TeamMember = ({ name, role, image, delay, skills = [] }: TeamMemberProps) => {
     return (
-        <div className={`glass-card p-6 animate-fade-up animate-once animate-fill-both`} style={{ animationDelay: `${delay}ms` }}>
+        <div className={`glass-card p-6 animate-fade-up animate-once animate-fill-both flex flex-col items-start`} style={{ animationDelay: `${delay}ms` }}>
             <MyCard
                 img={image}
             />

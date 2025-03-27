@@ -7,10 +7,9 @@ const Hero = () => {
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
             </div>
-
             <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
                 <div className="text-center">
-                    <h1 className="animate-fade-up animate-once animate-fill-both text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-tight text-balance">
+                    <h1 className="animate-fade-up animate-once animate-fill-both text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-tight text-balance text-transparent bg-clip-text bg-gradient-to-r from-gray-600 via-gray-400 to-gray-500">
                     The Impossible UI – Unique UX<br />with Precision & Purpose
                     </h1>
                     <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animate-delay-200 animate-once animate-fill-both">
