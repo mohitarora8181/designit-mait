@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Zap, TruckFast, Flame, ArrowRight } from "lucide-react";
+import { Zap, Truck, Flame, ArrowRight } from "lucide-react";
 
 export default function FeatureCategories() {
   return (
@@ -30,7 +30,7 @@ export default function FeatureCategories() {
             tagline="Ready to roll! Fast delivery on available vehicles."
             description="WANNA LEASE FAST? ⏩ Our best deals on in-stock cars, ready to roll within weeks!"
             image="https://images.unsplash.com/photo-1620891549027-942faa27b3fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
-            icon={<TruckFast size={16} />}
+            icon={<Truck size={16} />}
             iconText="FAST!"
             bgFrom="from-green-500"
             bgTo="to-yellow-500"
