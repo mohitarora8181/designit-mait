@@ -1,20 +1,23 @@
 
 import { Code, Palette, Users, Zap, Eye, BarChart3 } from 'lucide-react';
 import TeamMember from './TeamMember';
+import MyCard from '@/@/components/MyCard';
+import Mohit from "../../../public/mohit.jpg"
+import Vinit from "../../../public/vinit.jpg"
 
 const Features = () => {
   const teamMembers = [
     { 
       name: "Mohit Arora", 
       role: "Developer", 
-      image: "https://media.licdn.com/dms/image/v2/D5603AQEFECkYYAzfwQ/profile-displayphoto-shrink_400_400/B56ZUPg9CMHQAk-/0/1739722054371?e=1748476800&v=beta&t=XEtzJNrC-dcd9JO-dpfOfbjPy4JzZh1kEKOse6Eut74", 
+      image: Mohit, 
       delay: 100,
       skills: ["React", "Node.js", "UI/UX", "TypeScript"]
     },
     { 
       name: "Vinit Singh", 
       role: "Developer", 
-      image: "https://media.licdn.com/dms/image/v2/D5603AQF3WA53KIviig/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709833349979?e=1748476800&v=beta&t=t9yDr1Tj6W_6m8GSPRVhtWnIjsj4WcnAnHIarrSL2lg", 
+      image: Vinit, 
       delay: 200,
       skills: ["React", "Node.js", "UI/UX", "TypeScript"]
     },
@@ -32,7 +35,7 @@ const Features = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-4xl mx-auto">
           {teamMembers.map((member, index) => (
-            <TeamMember key={index} {...member} />
+            <TeamMember key={index} name={member.name} role={member.role} image={member.image} skills={member.skills} />
           ))}
         </div>
         

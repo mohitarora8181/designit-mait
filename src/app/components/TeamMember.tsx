@@ -1,8 +1,8 @@
-
+import MyCard from "@/@/components/MyCard";
 interface TeamMemberProps {
     name: string;
     role: string;
-    image: string;
+    image: any;
     delay: number;
     skills?: string[];
 }
@@ -10,10 +10,8 @@ interface TeamMemberProps {
 const TeamMember = ({ name, role, image, delay, skills = [] }: TeamMemberProps) => {
     return (
         <div className={`glass-card p-6 animate-fade-up animate-once animate-fill-both`} style={{ animationDelay: `${delay}ms` }}>
-            <img
-                src={image}
-                alt={name}
-                className="object-cover w-96 h-96 hover:scale-105 transition-transform duration-300 my-2"
+            <MyCard
+                img={image}
             />
             <h3 className="font-bold text-lg">{name}</h3>
             <p className="text-muted-foreground text-sm mb-3">{role}</p>

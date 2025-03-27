@@ -7,6 +7,7 @@ import Hero from "./components/Heros";
 import Features from "./components/Features";
 import CallToAction from "./components/CTA";
 import Footer from "./components/Footer";
+import MyCard from "../components/MyCard";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
